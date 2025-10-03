@@ -33,7 +33,7 @@
             min-height: 100vh;
         }
 
-        .container {
+        .container1 {
             background: var(--bg-glass);
             backdrop-filter: blur(20px);
             border-radius: var(--radius-xl);
