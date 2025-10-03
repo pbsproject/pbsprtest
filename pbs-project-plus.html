@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBS.project - Твой ключ к лучшим модам для Proton Bus Simulator!</title>
+    <link rel="icon" href="img/logo/logo.png" type="image/png">
+    <meta name="description" content="PBS.project+ от проекта PBS.project. Мы занимаемся разработкой дополнений для игры Proton Bus Simulator. Если хотите получить крутые моды - вам до нас!" />
+    <meta name="keywords" content="pbs, пбс, Proton Bus, Протон Бас, Proton Bus Simulator, pbsproject, pbs.project, Моды, моды, моды для игры, mods, mod" />
+    <meta name="author" content="Vitaliy Shkarupa" />
+
+    <meta property="og:title" content="PBS.project - лучшие моды для Proton Bus Simulator!" />
+    <meta property="og:description" content="PBS.project+ от проекта PBS.project. Мы занимаемся разработкой дополнений для игры Proton Bus Simulator. Если хотите получить крутые моды - вам до нас!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pbsproject.github.io/pbsproject/" />
+    <meta property="og:image" content="https://pbsproject.github.io/pbsproject/img/logo/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PBS.project - лучшие моды для Proton Bus Simulator!" />
+    <meta name="twitter:description" content="PBS.project+ от проекта PBS.project. Мы занимаемся разработкой дополнений для игры Proton Bus Simulator. Если хотите получить крутые моды - вам до нас!" />
+    <meta name="twitter:image" content="https://pbsproject.github.io/pbsproject/img/logo/logo.png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGLT883PDC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FGLT883PDC');
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Загрузка...</div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="img/logo/logo.png" alt="PBS.project Логотип">
+                    <div class="logo-text">
+                        <div class="logo-title">PBS.project</div>
+                        <div class="logo-subtitle"><br>Proton Bus Simulator</div>
+                    </div>
+                </div>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="download-page.html" class="nav-link">Страница загрузки</a></li>
+                    <li><a href="download-page-offered.html" class="nav-link">Ваши дополнения</a></li>
+                    <li><a href="pbs-project-plus.html" class="nav-link active"><span class="gradient-text-orange">PBS.project+</span></a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li>
+                        <a href="login.html" class="nav-link" id="authBtn">Войти</a>
+                    </li>
+                </ul>
+
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="theme-toggle glass-effect" aria-label="Toggle Theme">
+                        <i class="fas fa-moon icon-moon"></i>
+                        <i class="fas fa-sun icon-sun"></i>
+                        <span class="toggle-indicator"></span>
+                    </button>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="premium" class="hero">
+        <div class="hero-bg-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge fade-in-up">
+                    <i class="fa-solid fa-star"></i>
+                    <span>PBS.project</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <h1 class="hero-title fade-in-up">
+                    <span class="gradient-text-orange">PBS.project+</span> —<br>
+                    <span class="gradient-text">только эксклюзивный</span><br>
+                    контент
+                </h1>
+
+                <p class="hero-subtitle fade-in-up">
+                    Это приватный Telegram-канал, с эксклюзивными и очень качественными дополнениями для PBS, а так же общение с интересными людьми. По сравнению с подпиской на boosty или любой другой подпиской, в наш канал доступ покупается единоразово, по этому, не надо будет каждый месяц платить деньги за доступ к эксклюзивному контенту.
+                </p>
+
+                <div class="hero-buttons fade-in-up">
+                    <a href="https://t.me/zaliznyy_vershnyk" class="btn btn-primary">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Купить
+                    </a>
+                    <a href="#modlist" class="btn btn-outline">
+                        <i class="fa-solid fa-question"></i>
+                        Содержимое
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-chevron-down" style="color: var(--accent-cyan);"></i>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Информация</div>
+                <h2 class="section-title fade-in-up">
+                    Основная <span class="gradient-text">информация</span>
+                </h2>
+                <p class="section-description fade-in-up">
+                    Ответы на самые популярные вопросы
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        <span>Стоимость</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p style="margin-bottom: var(--space-md); font-weight: 600; color: var(--accent-cyan);">Какая стоимость «PBS.project+»?</p>
+                            <ul class="faq-list">
+                                <li><i class="fa-solid fa-dollar-sign" style="color: var(--accent-green);"></i>Стоимость «PBS.project+» - 1500 российских рублей | 750 украинских гривен | 19 евро.</li>
+                                <li><i class="fa-solid fa-credit-card" style="color: var(--accent-green);"></i>Оплату можно проводить как на банковскую карту или бусти, так и через TON кошёлек, Pay Pal и другие удобные вам сервисы.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        <span>Преимущества</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p style="margin-bottom: var(--space-md); font-weight: 600; color: var(--accent-cyan);">Какие преимущества я получу купив «PBS.project+»?</p>
+                            <ul class="faq-list">
+                                <li><i class="fa-solid fa-star" style="color: var(--accent-green);"></i>Доступ к огромному количеству эксклюзивного контента.</li>
+                                <li><i class="fa-solid fa-comments" style="color: var(--accent-green);"></i>Большое адекватное комьюнити единомышлеников в нашем чате.</li>
+                                <li><i class="fa-solid fa-headset" style="color: var(--accent-green);"></i>Личное общение с администрацией проекта.</li>
+                                <li><i class="fa-solid fa-wrench" style="color: var(--accent-green);"></i>Оказание круглосуточной тех-поддержки.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in-up">
+                    <button class="faq-question">
+                        <span>Реферальная система</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            <p style="margin-bottom: var(--space-md); font-weight: 600; color: var(--accent-cyan);">У вас есть реферальная система?</p>
+                            <ul class="faq-list">
+                                <li><i class="fa-solid fa-user-plus" style="color: var(--accent-green);"></i>За каждого приведённого РЕАЛЬНОГО покупателя вы получаете скидку на «PBS.project+» в размере 20%.</li>
+                                <li><i class="fa-solid fa-user-plus" style="color: var(--accent-green);"></i>Если у вас уже есть «PBS.project+». За каждого приведённого РЕАЛЬНОГО покупателя вы получаете бонус в размере одного подарка от проекта на выбор администрации.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modlist" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Список дополнений</div>
+                <h2 class="section-title fade-in-up">
+                    Список дополнений в <span class="gradient-text">PBS.project+</span>
+                </h2>
+                <p class="section-description fade-in-up">
+                    Список актуальных дополнений, а так же список следующих дополнений в «PBS.project+»
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="card fade-in-up">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-xl);">
+                        <div>
+                            <h4 style="color: var(--accent-green); margin-bottom: var(--space-lg); font-size: 16px; font-weight: 700; text-align: center; padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">Доступно</h4>
+                            <div style="display: grid; gap: var(--space-sm);">
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Троллейбус ЗиУ 682Г</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Троллейбус ЗиУ 682Г-016 (017)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Троллейбус ЗиУ 682Г (Троллейбусный поезд)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Автобус МАЗ 103.065</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов ПАЗ-4234</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Автобус ПАЗ-8234</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Карта «Серповский регион v.0.1»</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов MAN UEL</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Карта «Суздаль»</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов ПАЗ-3205</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Автобус ПАЗ-320412-05</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Mercedes-Benz eCitaro</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--secondary-orange); margin-bottom: var(--space-lg); font-size: 16px; font-weight: 700; text-align: center; padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">Скоро будет</h4>
+                            <div style="display: grid; gap: var(--space-sm);">
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Икарус 250</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Икарус 256</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Икарус 260</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Икарус 280</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Karosa B961</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Karosa CX34</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов MAN NL T-Rex</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов MAN NL202</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Mercedes-Benz Coach O560</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Автобус Mercedes-Benz O407</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Mercedes-Benz O530</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Setra S31x</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
+                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <span style="font-size: 13px; font-weight: 500;">Пак автобусов Setra S200</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Галерея</div>
+                <h2 class="section-title fade-in-up">
+                    <span class="gradient-text">Галерея</span> PBS.project+
+                </h2>
+                <p class="section-description fade-in-up">
+                    Небольшая визуальная часть дополнений, которые находятся в «PBS.project+».
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/zfnZVSMH/IMG-5943.jpg" alt="ПАЗ-32053 на карте Суздаль" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ПАЗ-32053 на карте Суздаль</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/FKj57gq0/IMG-5942.jpg" alt="ЛиАЗ-677м на карте Борисов" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ЛиАЗ-677м на карте Борисов</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/7Lg8fMcg/IMG-5940.jpg" alt="ПАЗ-320412-05 на карте Зурбаган" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ПАЗ-320412-05 на карте Зурбаган</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/0NpRbd3n/IMG-5937.jpg" alt="ПАЗ-8324 на карте Серповский Регион" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ПАЗ-8324 на карте Серповский Регион</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/Dzqk8dDQ/IMG-5941.jpg" alt="MAN ÜL на карте Суздаль" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>MAN ÜL на карте Суздаль</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/XvwSpchf/IMG-5938.jpg" alt="ЗиУ 682Г-016 (017)" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ЗиУ 682Г-016 (017)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" data-id="pbs-project-plus" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Отзывы</div>
+                <h2 class="section-title fade-in-up">
+                    Отзывы о <span class="gradient-text">PBS.project+</span>
+                </h2>
+                <p class="section-description fade-in-up">
+                    Если вы уже являетесь пользователем PBS.project+, можете оценить продукт, а так же написать комментарий.
+                </p>
+            </div>
+
+            <div class="reaction-box">
+                <button class="reaction-btn like-btn">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="reaction-btn dislike-btn">
+                    <i class="fas fa-thumbs-down"></i>
+                    <span class="dislike-count">0</span>
+                </button>
+            </div>
+
+            <div class="comments-section">
+                <h2>Оставить комментарий</h2>
+                <br>
+                <form id="commentForm" class="comment-form">
+                    <input type="text" id="nickname" placeholder="Ваш ник" required>
+                    <textarea id="commentText" placeholder="Ваш комментарий..." required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+                <br>
+                <h2>Комментарии</h2>
+                <br>
+                <div id="commentsList"></div>
+            </div>
+    </section>
+
+    <section class="section" id="socials" padding-top: 60px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Мы в соцсетях</div>
+                <h2 class="section-title fade-in-up">
+                    Подпишитесь на наши <span class="gradient-text">социальные сети</span>
+                </h2>
+                <p class="section-description fade-in-up">
+                    Будьте в курсе обновлений, модов и новостей!
+                </p>
+            </div>
+
+            <div class="social-icons fade-in-up" style="display: flex; justify-content: center; gap: 30px; margin-top: 40px;">
+                <a href="https://t.me/pbs_project" target="_blank" class="social-link" aria-label="Telegram" style="font-size: 32px; color: var(--accent-cyan); transition: 0.3s;">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://vk.com/pbs.project" target="_blank" class="social-link" aria-label="VK" style="font-size: 32px; color: var(--accent-blue); transition: 0.3s;">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://www.youtube.com/@vitaliy_shkarupa" target="_blank" class="social-link" aria-label="YouTube" style="font-size: 32px; color: var(--accent-red); transition: 0.3s;">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://discord.gg/PZ5eaEhFfS" target="_blank" class="social-link" aria-label="Discord" style="font-size: 32px; color: var(--accent-purple); transition: 0.3s;">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://boosty.to/vitaliyshkarupa" target="_blank" class="social-link" aria-label="Boosty" style="font-size: 32px; color: var(--accent-purple); transition: 0.3s;">
+                    <img src="img/logo/boosty.svg" alt="Boosty" class="boosty-img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p style="margin-bottom: var(--space-sm);">&copy; 2025 PBS.project. Все права защищены.</p>
+                <p class="footer-highlight">Per aspera ad astra...</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script type="module" src="js/firebase-reaction.js"></script>
+    <script type="module" src="js/bt-login.js"></script>
+    <script type="module" src="js/plugins.js"></script>
+</body>
+
+</html>

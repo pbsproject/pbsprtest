@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBS.project - Твой ключ к лучшим модам для Proton Bus Simulator!</title>
+    <link rel="icon" href="img/logo/logo.png" type="image/png">
+    <meta name="description" content="Официальный сайт проекта PBS.project. Мы занимаемся разработкой дополнений для игры Proton Bus Simulator. Если хотите получить крутые моды - вам до нас!" />
+    <meta name="keywords" content="pbs, пбс, Proton Bus, Протон Бас, Proton Bus Simulator, pbsproject, pbs.project, Моды, моды, моды для игры, mods, mod" />
+    <meta name="author" content="Vitaliy Shkarupa" />
+
+    <meta property="og:title" content="PBS.project - лучшие моды для Proton Bus Simulator!" />
+    <meta property="og:description" content="Официальный сайт проекта PBS.project. Мы занимаемся разработкой дополнений для игры Proton Bus Simulator. Если хотите получить крутые моды - вам до нас!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pbsproject.github.io/pbsproject/" />
+    <meta property="og:image" content="https://pbsproject.github.io/pbsproject/img/logo/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PBS.project - лучшие моды для Proton Bus Simulator!" />
+    <meta name="twitter:description" content="Официальный сайт проекта PBS.project. Мы занимаемся разработкой дополнений для игры Proton Bus Simulator. Если хотите получить крутые моды - вам до нас!" />
+    <meta name="twitter:image" content="https://pbsproject.github.io/pbsproject/img/logo/logo.png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGLT883PDC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FGLT883PDC');
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">Загрузка...</div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="img/logo/logo.png" alt="PBS.project Логотип">
+                    <div class="logo-text">
+                        <div class="logo-title">PBS.project</div>
+                        <div class="logo-subtitle"><br>Proton Bus Simulator</div>
+                    </div>
+                </div>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Главная</a></li>
+                    <li><a href="download-page.html" class="nav-link">Страница загрузки</a></li>
+                    <li><a href="download-page-offered.html" class="nav-link">Ваши дополнения</a></li>
+                    <li><a href="pbs-project-plus.html" class="nav-link"><span class="gradient-text-orange">PBS.project+</span></a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li>
+                        <a href="login.html" class="nav-link" id="authBtn">Войти</a>
+                    </li>
+                </ul>
+
+                <div class="nav-controls">
+                    <button id="theme-toggle" class="theme-toggle glass-effect" aria-label="Toggle Theme">
+                        <i class="fas fa-moon icon-moon"></i>
+                        <i class="fas fa-sun icon-sun"></i>
+                        <span class="toggle-indicator"></span>
+                    </button>
+
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-bg-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge fade-in-up">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Официальный сайт проекта</span>
+                </div>
+
+                <h1 class="hero-title fade-in-up">
+                    Новое поколение<br>
+                    <span class="gradient-text">модов для игры</span><br>
+                    Proton Bus Simulator
+                </h1>
+
+                <p class="hero-subtitle fade-in-up">
+                    PBS.project — это ваш ключ к бесконечным возможностям в мире Proton Bus Simulator. Здесь вы можете найти уникальные моды, которые преобразят вашу игру и сделают каждую поездку незабываемой.
+                </p>
+
+                <div class="hero-buttons fade-in-up">
+                    <a href="#newdownloads" class="btn btn-primary">
+                        <i class="fa-solid fa-plus"></i>
+                        Перейти к новинкам
+                    </a>
+                    <a href="pbs-project-plus.html" class="btn btn-outline">
+                        <i class="fas fa-user-plus"></i>
+                        PBS.project+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-chevron-down" style="color: var(--accent-cyan);"></i>
+        </div>
+    </section>
+
+    <section class="section" id="about" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">О нас</div>
+                <h2 class="section-title fade-in-up">
+                    Кто мы, и что мы <span class="gradient-text">делаем</span>
+                </h2>
+                <p class="section-description fade-in-up">
+                    PBS.project — это ваш ключ к бесконечным возможностям в мире Proton Bus Simulator. Здесь вы можете найти уникальные моды, которые преобразят вашу игру и сделают каждую поездку незабываемой.
+                </p>
+            </div>
+
+            <div class="card fade-in-up">
+                <div style="text-align: center; padding: var(--space-lg); background: var(--bg-tertiary); border-radius: var(--radius-md); border: 1px solid rgba(0, 212, 255, 0.2);">
+                    <h3 style="color: var(--accent-cyan); margin-bottom: var(--space-md); font-size: 18px; font-weight: 700;">Присоединяйся к нашему комьюнити в Telegram!</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--space-lg); font-size: 14px;">Стань частю нашего проекта!</p>
+
+                    <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+                        <a href="https://t.me/pbs_project" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Наш Telegram-канал
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="newdownloads">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Новинки</div>
+                <h2 class="section-title fade-in-up">
+                    <span class="gradient-text">Новые</span> дополнения
+                </h2>
+                <p class="section-description fade-in-up">
+                    Зацените недавно вышедшие дополнения!
+                </p>
+            </div>
+
+            <div class="departments-grid"></div>
+
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Наши работы</div>
+                <h2 class="section-title fade-in-up">
+                    <span class="gradient-text">Галерея</span> работ
+                </h2>
+                <p class="section-description fade-in-up">
+                    Насладитесь вайбом этих работ!
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/fR9Nmhpb/IMG-5930.jpg" alt="Hundai County Kuzbass на карте Суздаль" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Hundai County Kuzbass на карте Суздаль</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/6QxNhmxw/IMG-5931.jpg" alt="Optare Spectra на карте Зурбаган" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>Optare Spectra на карте Зурбаган</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/0N1qCB19/IMG-5932.jpg" alt="ЛиАЗ-677М на карте Борисов" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ЛиАЗ-677М на карте Борисов</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/LsFMVbF9/IMG-5933.jpg" alt="НефАЗ-52994-10 на карте Борисов" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>НефАЗ-52994-10 на карте Борисов</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/pdMtB6M2/IMG-5934.jpg" alt="ЛиАЗ-677М на карте Борисов" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ЛиАЗ-677М на карте Борисов</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in-up scale-in">
+                    <img src="https://i.postimg.cc/tgGHzMGC/IMG-5935.jpg" alt="ПАЗ-32054 на карте Зурбаган" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span>ПАЗ-32054 на карте Зурбаган</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="socials" style="background: var(--bg-primary); padding-top: 60px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in-up">Мы в соцсетях</div>
+                <h2 class="section-title fade-in-up">
+                    Подпишитесь на наши <span class="gradient-text">социальные сети</span>
+                </h2>
+                <p class="section-description fade-in-up">
+                    Будьте в курсе обновлений, модов и новостей!
+                </p>
+            </div>
+
+            <div class="social-icons fade-in-up" style="display: flex; justify-content: center; gap: 30px; margin-top: 40px;">
+                <a href="https://t.me/pbs_project" target="_blank" class="social-link" aria-label="Telegram" style="font-size: 32px; color: var(--accent-cyan); transition: 0.3s;">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://vk.com/pbs.project" target="_blank" class="social-link" aria-label="VK" style="font-size: 32px; color: var(--accent-blue); transition: 0.3s;">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://www.youtube.com/@vitaliy_shkarupa" target="_blank" class="social-link" aria-label="YouTube" style="font-size: 32px; color: var(--accent-red); transition: 0.3s;">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://discord.gg/PZ5eaEhFfS" target="_blank" class="social-link" aria-label="Discord" style="font-size: 32px; color: var(--accent-purple); transition: 0.3s;">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://boosty.to/vitaliyshkarupa" target="_blank" class="social-link" aria-label="Boosty" style="font-size: 32px; color: var(--accent-purple); transition: 0.3s;">
+                    <img src="img/logo/boosty.svg" alt="Boosty" class="boosty-img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p style="margin-bottom: var(--space-sm);">&copy; 2025 PBS.project. Все права защищены.</p>
+                <p class="footer-highlight">Per aspera ad astra...</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script type="module" src="js/firebase-home.js"></script>
+    <script type="module" src="js/bt-login.js"></script>
+    <script type="module" src="js/plugins.js"></script>
+</body>
+
+</html>
