@@ -25,7 +25,6 @@
             max-width: 900px;
             margin: 30px auto;
             padding: 0 20px;
-			margin-top: 40px; /* щоб панелі не прилипали до шапки */
         }
 
         .panel {
@@ -290,4 +289,9 @@
             border-radius: 50%;
             cursor: pointer;
             backdrop-filter: blur(10px);
+        }
+		
+        #apanel {
+            margin-top: 100px;
+            /* Можно изменить на больше или меньше */
         }
