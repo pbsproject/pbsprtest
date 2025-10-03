@@ -1,21 +1,3 @@
-        import {
-            initializeApp
-        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import {
-            getAuth,
-            createUserWithEmailAndPassword,
-            signInWithEmailAndPassword,
-            updateProfile
-        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyDKTwIYWrKVI2chV2NT6AuoOScslidkPPE",
-            authDomain: "pbstest-120f0.firebaseapp.com",
-            projectId: "pbstest-120f0",
-        };
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-
         const signupContainer = document.getElementById("signupContainer");
         const loginContainer = document.getElementById("loginContainer");
 

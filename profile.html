@@ -58,7 +58,7 @@
                     <li><a href="pbs-project-plus.html" class="nav-link"><span class="gradient-text-orange">PBS.project+</span></a></li>
                     <li><a href="about.html" class="nav-link">О нас</a></li>
                     <li>
-                        <a href="login.html" class="nav-link" id="authBtn">Войти</a>
+                        <a href="login.html" class="nav-link active" id="authBtn">Войти</a>
                     </li>
                 </ul>
 
@@ -76,10 +76,10 @@
             </nav>
         </div>
     </header>
-
-    <div class="container1">
+	
+    <div class="container">
         <h2>Ваш профиль</h2>
-        <img id="profilePhoto" src="pic/default-avatar.png" alt="Аватар">
+        <img id="profilePhoto" src="img/default-avatar.png" alt="Аватар">
 
         <div class="profile-info">
             <p><b>Имя:</b> <span id="profileName"></span></p>
@@ -113,6 +113,7 @@
         </div>
     </div>
 
+    <script type="module" src="js/firebase.js"></script>
     <script type="module" src="js/profile.js"></script>
     <script type="module" src="js/bt-login.js"></script>
     <script type="module" src="js/plugins.js"></script>
