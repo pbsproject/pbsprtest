@@ -290,8 +290,3 @@
             cursor: pointer;
             backdrop-filter: blur(10px);
         }
-		
-        #apanel {
-            margin-top: 100px;
-            /* Можно изменить на больше или меньше */
-        }
