@@ -39,6 +39,18 @@
 </head>
 
 <body>
+    <main class="container">
+        <div id="signupContainer">
+            <h2>Регистрация</h2>
+            <form id="signupForm">
+                <input type="text" id="signupName" placeholder="Ваше імя" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Пароль" required>
+                <button type="submit">Зарегистрироватся</button>
+            </form>
+            <p>Уже есть акаунт? <a href="#" id="showLogin">Войти</a></p>
+        </div>
+		
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
@@ -75,18 +87,6 @@
             </nav>
         </div>
     </header>
-
-    <main class="container">
-        <div id="signupContainer">
-            <h2>Регистрация</h2>
-            <form id="signupForm">
-                <input type="text" id="signupName" placeholder="Ваше імя" required>
-                <input type="email" id="signupEmail" placeholder="Email" required>
-                <input type="password" id="signupPassword" placeholder="Пароль" required>
-                <button type="submit">Зарегистрироватся</button>
-            </form>
-            <p>Уже есть акаунт? <a href="#" id="showLogin">Войти</a></p>
-        </div>
 
         <div id="loginContainer" style="display:none;">
             <h2>Вход</h2>
