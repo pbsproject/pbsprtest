@@ -1,3 +1,6 @@
+import { auth, db } from "./firebase/firebase.js";
+import { ref, get, set, push, onValue } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
         // ==================
         // Page ID статичний
         // ==================

@@ -1,3 +1,7 @@
+		import { auth, db } from "./js/firebase.js";
+		import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+		import { ref, push } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
             // DOM
             const loginPanel = document.getElementById('loginPanel');
             const adminPanel = document.getElementById('adminPanel');

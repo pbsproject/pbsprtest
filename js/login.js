@@ -1,3 +1,7 @@
+		import { auth, db } from "./js/firebase.js";
+		import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+		import { ref, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
         const signupContainer = document.getElementById("signupContainer");
         const loginContainer = document.getElementById("loginContainer");
 

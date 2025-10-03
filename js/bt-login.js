@@ -1,3 +1,6 @@
+		{ auth } from "./js/firebase.js";
+		import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
         // === Кнопка авторизації / профілю ===
         const authBtn = document.getElementById("authBtn");
 

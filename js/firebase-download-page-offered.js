@@ -1,5 +1,5 @@
-		import { db } from "./firebase-config.js";
-		import { ref, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+	import { db } from "./js/firebase.js";
+	import { ref, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
         get(ref(db, "mods1")).then(snapshot => {
             const mods = [];
