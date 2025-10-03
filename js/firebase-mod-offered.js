@@ -1,5 +1,34 @@
-import { db } from "./js/firebase.js";
-import { ref, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+import {
+    initializeApp
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import {
+    getDatabase,
+    ref,
+    get,
+    push,
+    update,
+    onValue
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+import {
+    getAuth,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+// Firebase config
+const firebaseConfig = {
+    apiKey: "AIzaSyDKTwIYWrKVI2chV2NT6AuoOScslidkPPE",
+    authDomain: "pbstest-120f0.firebaseapp.com",
+    databaseURL: "https://pbstest-120f0-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "pbstest-120f0",
+    storageBucket: "pbstest-120f0.firebasedatabase.app",
+    messagingSenderId: "952039250071",
+    appId: "1:952039250071:web:2863a90232ae62646671d2",
+    measurementId: "G-17Y32259ZR"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const auth = getAuth();
 
 // ==================
 // Динамічний Page ID з URL

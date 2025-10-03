@@ -1,6 +1,28 @@
-		import { auth, db } from "./js/firebase.js";
-		import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-		import { ref, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+        // --- Firebase скрипт без змін ---
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import {
+            getAuth,
+            signOut,
+            onAuthStateChanged,
+            updateProfile
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import {
+            getDatabase,
+            ref,
+            get
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDKTwIYWrKVI2chV2NT6AuoOScslidkPPE",
+            authDomain: "pbstest-120f0.firebaseapp.com",
+            databaseURL: "https://pbstest-120f0-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "pbstest-120f0",
+        };
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getDatabase(app);
 
         const profileName = document.getElementById("profileName");
         const profileEmail = document.getElementById("profileEmail");

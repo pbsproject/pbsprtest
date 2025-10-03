@@ -1,5 +1,24 @@
-	import { db } from "./js/firebase.js";
-	import { ref, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import {
+            getDatabase,
+            ref,
+            get
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDpeYw8bt1j4fqSvXtAPyRmaMZK_UICX94",
+            authDomain: "pbsproject-39041.firebaseapp.com",
+            databaseURL: "https://pbsproject-39041-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "pbsproject-39041",
+            storageBucket: "pbsproject-39041.appspot.com",
+            messagingSenderId: "695400532049",
+            appId: "1:695400532049:web:31d2de08045c4d3eeb1070"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
 
         get(ref(db, "mods")).then(snapshot => {
             const mods = [];
